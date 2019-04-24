@@ -12,7 +12,7 @@ pipeline {
 						echo 'Package..'
 						sh 'mvn clean package install'
 						script{
-						def mapProperties = t.getProperties()
+						def mapProperties = env.getProperties()
         					mapProperties.remove('class')//默认有自带class属性，移除减少数据传输量
         					println(mapProperties)
 						}
