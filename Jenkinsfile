@@ -14,6 +14,7 @@ pipeline {
 			}
 		}
 		stage('Build') {
+			agent any
 			steps {
 						echo 'Clean..'
 						sh 'mv  docker/Dockerfile Dockerfile'
