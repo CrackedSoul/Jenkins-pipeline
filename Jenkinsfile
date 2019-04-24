@@ -11,6 +11,9 @@ pipeline {
 			steps {
 						echo 'Package..'
 						sh 'mvn clean package install'
+						script{
+						echo env.toString()
+						}
 			}
 		}
 		stage('Build') {
