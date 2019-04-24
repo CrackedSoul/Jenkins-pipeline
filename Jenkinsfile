@@ -36,9 +36,9 @@ pipeline {
 	    			JOB_URL:<a href=\"$JOB_URL\">$JOB_URL</br>
 	    			LogInfo: <a href=\"${env.BUILD_URL}console\">${env.BUILD_URL}console</br>
 	    		""", 
-	    		recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], 
+	    		recipientProviders: [[$class: 'DevelopersRecipientProvider']], 
 	    		subject: '${JOB_NAME}- Build #${BUILD_NUMBER} Construction Result',   
-	    		to: 'yangwei@mastercom.cn'
+	    		to: '1410914605@qq.com'
 				)
     	}
     }
