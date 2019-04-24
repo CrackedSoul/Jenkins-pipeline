@@ -29,7 +29,7 @@ pipeline {
 			}
 	}
 	post{
-    	failure{
+    	always{
 	    	emailext (
 	    		body: """
 	    			${JOB_NAME}- Build #${BUILD_NUMBER} Result!</br>
